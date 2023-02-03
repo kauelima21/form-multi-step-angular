@@ -1,0 +1,9 @@
+<div class="progress-bar">
+  <div class="step" *ngFor="let step of steps">
+    <p [ngClass]="step.completed ? 'active' : ''">{{ step.label }}</p>
+    <div class="bullet" [ngClass]="step.completed ? 'active' : ''">
+      <span>{{ step.id }}</span>
+    </div>
+    <div class="check fa-solid fa-check"></div>
+  </div>
+</div>
